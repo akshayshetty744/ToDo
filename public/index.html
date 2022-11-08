@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../src/images/favicon-32x32.png"
+    />
+    <title>Todo app</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Josefin+Sans:wght@700&family=League+Spartan:wght@300&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Josefin+Sans&family=League+Spartan:wght@300&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style.css" />
+    <script src="./index.js"></script>
+  </head>
+
+  <body>
+    <img class="light" src="../src/images/bg-desktop-light.jpg" width="100%" />
+    <img class="dark" src="../src/images/bg-desktop-dark.jpg" width="100%" />
+
+    <div id="card" class="d-flex justify-content-center">
+      <div style="width: 38%">
+        <!-- todo text and dark mode logo -->
+        <div class="d-flex justify-content-between mb-4">
+          <h1 class="todo">T O D O</h1>
+          <button
+            type="button"
+            id="bt"
+            class="btn todo"
+            onclick="dark()"
+            value="NO"
+          >
+            <img id="sun" src="../src/images/icon-sun.svg" />
+          </button>
+        </div>
+        <!-- --------------------------------------------------------------- -->
+
+        <!-- Search check -->
+        <div class="d-flex justify-content-between" id="add">
+          <button id="check" role="switch" onclick="check()">
+            <img
+              class="d-flex justify-content-center"
+              src="../src/images/icon-check.svg"
+            />
+          </button>
+          <input
+            type="text "
+            class="input1 form-control"
+            placeholder="Add Task" id="input" onkeyup="enter()"
+          />
+        </div>
+        <!----------------------------------------------------------------------- -->
+    <!--all tr added main div -->
+    <div class="j" id="j">
+        <div class="table-responsive">
+         <table class="table" id="table">
+            <tbody id="tbody">
+            </tbody>
+         </table>
+        </div>
+        <div id="bot" class="d-flex justify-content-between">
+            <div class="count" id="count" style="margin-left:15px;">items left</div>
+
+            <div class="d-flex justify-content-between">
+            <div>
+                <button class="" id="all">All</button>
+            </div>
+            <div>
+                <button class="" id="completed">completed</button>
+            </div>
+            <div>
+                <button class="" id="Incomplete">Incomplete</button>
+            </div>
+            </div>
+
+            <div>
+                <button class="count" id="clear" style="margin-right:15px;" >clear all</button>
+            </div>
+            </div>
+    </div>
+
+       
+      </div>
+    </div>
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
