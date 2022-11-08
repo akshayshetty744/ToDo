@@ -7,17 +7,14 @@ function dark() {
     var x = document.querySelector(".dark");
     x.style.zIndex = "-1";
     document.querySelector("#sun").src = "../src/images/icon-sun.svg";
-      document.body.style.backgroundColor = "rgb(24,24,36)";
-      
-      
+    document.body.style.backgroundColor = "rgb(24,24,36)";
   } else if (t.value == "NO") {
     t.value = "YES";
     document.querySelector("#sun").src = "../src/images/icon-moon.svg";
     var x = document.querySelector(".dark");
     x.style.zIndex = "-2";
     document.body.style.backgroundColor = "white";
-      document.querySelector("#sun").className = "sun";
-      
+    document.querySelector("#sun").className = "sun";
   }
 }
 
@@ -98,8 +95,7 @@ function check1(e) {
       }
     }
   } else if (check1.value == "NO") {
-    e.style.background =
-      "linear-gradient(145deg, rgba(114,185,254,1) 23%, rgba(164,123,242,1) 67%)";
+    e.style.background = "linear-gradient(145deg, rgba(114,185,254,1) 23%, rgba(164,123,242,1) 67%)";
     check1.value = "YES";
     coutt++;
     console.log(count - coutt);
